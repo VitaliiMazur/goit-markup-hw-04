@@ -269,6 +269,31 @@ body {
   padding-bottom: 94px;
 }
 
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+} 
+.team-soc-item + .team-soc-item {
+  margin-left: 10px;
+}
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+}
+.team-soc-icon {
+  fill: #AFB1B8;
+}
+.team-soc-link:hover {
+  background-color: #2196F3;
+}
+.team-soc-link:hover .team-soc-icon {
+  fill: #ffffff;
+  }
 .business {
   padding-bottom: 200px;
   padding-top: 200px;
@@ -408,6 +433,7 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  margin-bottom: 16px;
 }
 
 /* --------------------------------footer------------------- */
