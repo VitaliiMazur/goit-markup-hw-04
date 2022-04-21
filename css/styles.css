@@ -8,6 +8,8 @@
   --btn-service-color: rgba(0, 0, 0, 0.25); /*кнопка заказать услугу*/
   --our-team-bgc-color: #f5f4fa; /*колір фону нашої команди*/
   --bgc--hoverfocus-btnservice-color: #188ce8; /*ховер,фокус кнопки заказать услугу*/
+  --team-soc-icon-color: #afb1b8; /*колір іконок соцальних мереж*/
+  --team-soc-link-hover-color: #2196f3; /*колір іконок ховеру-фокусу*/
 }
 p,
 h1,
@@ -272,35 +274,58 @@ body {
 .team-soc-list {
   display: flex;
   justify-content: center;
-} 
+  padding-bottom: 30px;
+}
 .team-soc-item + .team-soc-item {
   margin-left: 10px;
 }
 .team-soc-link {
   width: 44px;
   height: 44px;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  
 }
 .team-soc-icon {
-  fill: #AFB1B8;
+  fill: var(--team-soc-icon-color);
 }
+
 .team-soc-link:hover {
-  background-color: #2196F3;
+  background-color: var(--bgc--hoverfocus-btnservice-color);
 }
+
+.team-soc-link:focus {
+  background-color: var(--bgc--hoverfocus-btnservice-color);
+}
+
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--primary-bg-color);
+}
+
 .team-soc-link:hover .team-soc-icon {
-  fill: #ffffff;
-  }
+  fill: var(--primary-bg-color);
+}
+
+.team-list {
+  background: var(--primary-bg-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .business {
   padding-bottom: 200px;
   padding-top: 200px;
   text-align: center;
 
   background-color: var(--footer-bgc-color);
-  background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img2/hero-bg.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img2/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px;
@@ -341,7 +366,6 @@ body {
 }
 .work {
   display: flex;
-  margin: 0 auto;
 }
 .li-item + .li-item {
   margin-left: 30px;
@@ -351,6 +375,18 @@ body {
 }
 .li-item {
   width: 270px;
+}
+
+.li-div-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+
+  background-color: var(--our-team-bgc-color);
+  margin-bottom: 30px;
 }
 
 .list-text {
@@ -409,9 +445,14 @@ body {
 .team .link {
   display: flex;
 }
+.team-item {
+  padding-bottom: 0;
+  margin-bottom: 16px;
+}
 
 .our-team-name {
   margin-bottom: 10px;
+  text-align: center;
 
   font-weight: 500;
   font-size: 16px;
@@ -428,12 +469,13 @@ body {
   margin-left: 30px;
 }
 .profession-text {
+  text-align: center;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-  margin-bottom: 16px;
+  margin-bottom: 16pxp;
 }
 
 /* --------------------------------footer------------------- */
