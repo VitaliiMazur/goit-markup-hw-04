@@ -484,11 +484,12 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 }
 .client-list {
   display: flex;
-  justify-content: center;
 }
 
 .clients-link {
@@ -501,6 +502,20 @@ body {
   border: 1px solid var(--team-soc-icon-color);
   border-radius: 4px;
   fill: var(--team-soc-icon-color);
+}
+
+.client-item + .client-item {
+  margin-left: 30px;
+}
+.clients-link:hover .clients-icon {
+  fill: var(--acent-color);
+}
+.clients-link:focus .clients-icon {
+  fill: var(--acent-color);
+}
+.clients-link:hover {
+  fill: var(--acent-color);
+  border: 1px solid var(--acent-color);
 }
 
 /* --------------------------------footer------------------- */
