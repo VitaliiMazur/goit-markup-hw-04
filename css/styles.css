@@ -10,6 +10,7 @@
   --bgc--hoverfocus-btnservice-color: #188ce8; /*ховер,фокус кнопки заказать услугу*/
   --team-soc-icon-color: #afb1b8; /*колір іконок соцальних мереж*/
   --team-soc-link-hover-color: #2196f3; /*колір іконок ховеру-фокусу*/
+  --footer-bg-icon-color: rgba(255, 255, 255, 0.1);
 }
 p,
 h1,
@@ -573,4 +574,70 @@ body {
 }
 .email-footer {
   margin-bottom: 9px;
+}
+
+.footer-icon {
+  display: flex;
+  box-sizing: border-box;
+  display: block;
+}
+.go {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+}
+
+.go-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--footer-bg-icon-color);
+}
+
+.go-item + .go-item {
+  margin-left: 10px;
+}
+.go-list {
+  display: flex;
+}
+
+.go-footer-icon {
+  fill: var(--team-soc-icon-color);
+}
+
+.footer-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.go-footer-icon {
+  fill: var(--primary-bg-color);
+}
+
+.footer-link:hover {
+  background-color: var(--bgc--hoverfocus-btnservice-color);
+}
+
+.footer-link:focus {
+  background-color: var(--bgc--hoverfocus-btnservice-color);
+}
+
+.footer-link:focus .go-footer-icon {
+  fill: var(--primary-bg-color);
+}
+
+.footer-link:hover .go-footer-icon {
+  fill: var(--primary-bg-color);
 }
