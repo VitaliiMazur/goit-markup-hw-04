@@ -159,6 +159,9 @@ body {
 }
 
 .email {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -168,6 +171,9 @@ body {
 }
 
 .tel {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -193,7 +199,16 @@ body {
   display: inline-block;
   margin-right: 10px;
   fill: var(--primary-text-color);
+  
 }
+
+.email:hover,
+.email:focus .header-icon {
+  color: var(--acent-color);
+}
+
+
+
 
 /* --------------------------------------------------BUTTON */
 .button {
