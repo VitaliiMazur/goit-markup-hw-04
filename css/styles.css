@@ -86,6 +86,9 @@ body {
   color: var(--title-text-color);
 }
 
+
+
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -186,6 +189,8 @@ body {
   color: var(--acent-color);
 }
 
+
+
 /* --------------------------------------------------BUTTON */
 .button {
   background-color: var(--primary-bg-color);
@@ -239,6 +244,8 @@ body {
   border: 1px solid #eeeeee;
   border-top: none;
 }
+
+
 
 .items:nth-last-child(-n + 3) {
   margin-bottom: 0px;
@@ -329,7 +336,9 @@ body {
     url(../img2/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1600px;
+  background-size: cover;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .business-text {
@@ -520,6 +529,12 @@ body {
 }
 
 /* --------------------------------footer------------------- */
+
+
+
+
+
+
 .studio-footer {
   color: var(--primary-bg-color);
 }
@@ -580,6 +595,7 @@ body {
   display: flex;
   box-sizing: border-box;
   display: block;
+  
 }
 .go {
   margin-bottom: 20px;
@@ -588,6 +604,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  
 
   color: var(--primary-bg-color);
 }
