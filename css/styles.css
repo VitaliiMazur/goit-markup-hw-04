@@ -314,7 +314,6 @@ body {
 .team-soc-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
 }
 .team-soc-item + .team-soc-item {
   margin-left: 10px;
@@ -488,8 +487,7 @@ body {
   display: flex;
 }
 .team-item {
-  padding-bottom: 0;
-  margin-bottom: 16px;
+  padding-bottom: 30px;
 }
 
 .our-team-name {
@@ -517,7 +515,7 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-  margin-bottom: 16pxp;
+  margin-bottom: 16px;
 }
 
 .client-title {
